@@ -23,7 +23,7 @@ const indexRouter = require("./routes/index");
 app.use("/api", indexRouter); // Use '/api' as a prefix for all API routes
 
 // Start the server
-const port = process.env.PORT || 3001;
+const port = 3001;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
