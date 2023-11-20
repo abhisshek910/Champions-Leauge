@@ -47,7 +47,7 @@ const Matchform = () => {
       return;
     }
 
-    const res = await fetch("/api/matches", {
+    const res = await fetch("https://uefa-backend.onrender.com/api/matches", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -23,7 +23,7 @@ function StartMatch() {
   };
   const callData = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/matches", {
+      const res = await fetch("https://uefa-backend.onrender.com/api/matches", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -109,13 +109,16 @@ function StartMatch() {
       return;
     }
     setErrorGoalMessage("");
-    const res = await fetch("/api/matches/goals", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(goalData),
-    });
+    const res = await fetch(
+      "https://uefa-backend.onrender.com/api/matches/goals",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(goalData),
+      }
+    );
     alert("Goal Added Succesfully");
     const data = await res.json();
   };
@@ -130,13 +133,16 @@ function StartMatch() {
       return;
     }
     setErrorSubMessage("");
-    const res = await fetch("/api/matches/substitue", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(substituteData),
-    });
+    const res = await fetch(
+      "https://uefa-backend.onrender.com/api/matches/substitue",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(substituteData),
+      }
+    );
     alert("Substitute Added Sucessfully");
     setSubstituteData({});
   };
@@ -150,13 +156,16 @@ function StartMatch() {
       setErrorFoulMessage("Please fill in all fields");
       return;
     }
-    const res = await fetch("/api/matches/foul", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(foulData),
-    });
+    const res = await fetch(
+      "https://uefa-backend.onrender.com/api/matches/foul",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(foulData),
+      }
+    );
     alert("Foul Added Sucessfully");
     setErrorFoulMessage("");
     setFoulData({});

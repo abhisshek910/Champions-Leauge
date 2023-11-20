@@ -7,7 +7,7 @@ function Home() {
   const [matches, setMatches] = useState([]);
   const callData = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/matches", {
+      const res = await fetch("https://uefa-backend.onrender.com/api/matches", {
         method: "GET",
         headers: {
           Accept: "application/json",
