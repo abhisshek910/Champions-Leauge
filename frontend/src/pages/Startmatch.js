@@ -120,7 +120,6 @@ function StartMatch() {
       }
     );
     alert("Goal Added Succesfully");
-    const data = await res.json();
   };
 
   const sendSubstitue = async (e) => {
@@ -201,16 +200,16 @@ function StartMatch() {
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-6">
+            <div class="col-6 col-md-6">
               <div class="row">
-                <div class="col-6">
+                <div class="col-5 col-md-6">
                   <p class="manrope-font small-font">Lineups</p>
                   <div class="mt-4"></div>
                   {state.playing11_first_team.map((obj) => (
                     <p class="manrope-font-light2 extra-small-font">{obj}</p>
                   ))}
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-6">
                   <p class="manrope-font small-font">Substitue</p>
                   <div class="mt-4"></div>
                   {state.substitutes_first_team.map((obj) => (
@@ -219,16 +218,16 @@ function StartMatch() {
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-md-6">
               <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-6">
                   <p class="manrope-font small-font">Lineups</p>
                   <div class="mt-4"></div>
                   {state.playing11_second_team.map((obj) => (
                     <p class="manrope-font-light3 extra-small-font">{obj}</p>
                   ))}
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-6 ">
                   <p class="manrope-font small-font">Substitue</p>
                   <div class="mt-4"></div>
                   {state.substitutes_second_team.map((obj) => (
@@ -250,7 +249,7 @@ function StartMatch() {
           <div class="container">
             <div class="row">
               {/* Goal Management */}
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
@@ -335,13 +334,13 @@ function StartMatch() {
               </div>
 
               {/*Goal Details */}
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
                       <p class="title">Goal Details</p>
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName1}</p>
 
                           {currentMatch.goals_first_team.map((obj, index) => (
@@ -350,7 +349,7 @@ function StartMatch() {
                             </p>
                           ))}
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName2}</p>
                           {currentMatch.goals_second_team.map((obj, index) => (
                             <p key={index} class="goal-name">
@@ -367,7 +366,7 @@ function StartMatch() {
 
             <div class="row">
               {/* Substitute Management */}
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
@@ -452,13 +451,13 @@ function StartMatch() {
               </div>
 
               {/*Substitue Details*/}
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
                       <p class="title">Substitute Details</p>
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName1}</p>
                           {currentMatch.substitutesUsed_first_team.map(
                             (obj, index) => (
@@ -480,7 +479,7 @@ function StartMatch() {
                             )
                           )}
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName2}</p>
                           {currentMatch.substitutesUsed_second_team.map(
                             (obj, index) => (
@@ -510,7 +509,7 @@ function StartMatch() {
             </div>
 
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
@@ -607,13 +606,13 @@ function StartMatch() {
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="form-holder">
                   <div class="form-content2">
                     <div class="form-items">
                       <p class="title">Foul Details</p>
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName1}</p>
                           {currentMatch.fouls_first_team.map((obj, index) => (
                             <div class="mt-5">
@@ -638,7 +637,7 @@ function StartMatch() {
                             </div>
                           ))}
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <p class="team-name">{state.teamName2}</p>
                           {currentMatch.fouls_second_team.map((obj, index) => (
                             <div class="mt-5">

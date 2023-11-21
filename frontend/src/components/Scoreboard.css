@@ -67,3 +67,40 @@
     line-height: 70%;
     color: lightsalmon
 }
+@media screen and (max-width: 768px) {
+    .Scoreboard {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+
+    .v1 {
+        margin-top: 10%;
+        margin-left: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Scoreboard {
+        
+        
+    
+    margin-top: 5%;
+    
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    width: 90%;
+    float: left;
+    border-radius: 10px;
+    background-color: rgb(21, 39, 51);
+       
+    }
+
+    .v1 {
+        margin-top: 10%;
+        margin-left: 70%;
+    }
+}

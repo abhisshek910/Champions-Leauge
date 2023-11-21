@@ -43,15 +43,15 @@ export default function Showdetails() {
         </p>
         <p>Hello</p>
         <div class="row">
-          <div class="col-5">
+          <div class="col-4 col-md-5">
             <p class="manrope-font large-font align-center2">
               {state.teamName1}
             </p>
           </div>
-          <div class="col-2">
+          <div class="col-2 col-md-2">
             <p class="manrope-font small-font align-center">VS</p>
           </div>
-          <div class="col-5">
+          <div class="col-4 col-md-5">
             <p class="manrope-font large-font align-center3">
               {state.teamName2}
             </p>

@@ -55,7 +55,6 @@ const Matchform = () => {
       body: JSON.stringify(formData),
     });
     alert("Match Added Succesfully");
-    const data = await res.json();
   };
 
   return (
@@ -72,7 +71,7 @@ const Matchform = () => {
                   <p class="details">*Required Fields</p>
                   <form method="POST">
                     <div class="row">
-                      <div class="col-5">
+                      <div class="col-6 col-md-5">
                         <label class=" mr-1">First Team </label>
                         <input
                           class="form-control"
@@ -85,7 +84,7 @@ const Matchform = () => {
                           required
                         />
                       </div>
-                      <div class="col-5">
+                      <div class="col-6 col-md-5">
                         <label class=" mr-1"> Second Team </label>
                         <input
                           class="form-control"
@@ -99,14 +98,14 @@ const Matchform = () => {
                         />
                       </div>
 
-                      <div class="col-6">
+                      <div class="col-12 col-md-6">
                         <div class="row">
                           <label class=" mr-1 mt-3">
                             Playing 11 First Team{" "}
                           </label>
                           {formData.playing11_first_team.map(
                             (player, index) => (
-                              <div class="col-5">
+                              <div class="col-6 col-md-5">
                                 <input
                                   class="form-control"
                                   type="text"
@@ -128,14 +127,14 @@ const Matchform = () => {
                         </div>
                       </div>
 
-                      <div class="col-6">
+                      <div class="col-12 col-md-6">
                         <div class="row">
                           <label class=" mr-1 mt-3">
                             Playing 11 Second Team{" "}
                           </label>
                           {formData.playing11_second_team.map(
                             (player, index) => (
-                              <div class="col-5">
+                              <div class="col-6 col-md-5">
                                 <input
                                   class="form-control"
                                   type="text"
@@ -157,14 +156,14 @@ const Matchform = () => {
                         </div>
                       </div>
 
-                      <div class="col-6">
+                      <div class="col-12 col-md-6">
                         <div class="row">
                           <label class=" mr-1 mt-3">
                             Substitue First Team{" "}
                           </label>
                           {formData.substitutes_first_team.map(
                             (player, index) => (
-                              <div class="col-5">
+                              <div class="col-6 col-md-5">
                                 <input
                                   class="form-control"
                                   type="text"
@@ -186,14 +185,14 @@ const Matchform = () => {
                         </div>
                       </div>
 
-                      <div class="col-6">
+                      <div class="col-12 col-md-6">
                         <div class="row">
                           <label class=" mr-1 mt-3">
                             Substitue Second Team{" "}
                           </label>
                           {formData.substitutes_second_team.map(
                             (player, index) => (
-                              <div class="col-5">
+                              <div class="col-6 col-md-5">
                                 <input
                                   class="form-control"
                                   type="text"
@@ -214,7 +213,7 @@ const Matchform = () => {
                           )}
                         </div>
                       </div>
-                      <div class="col-4">
+                      <div class="col-6 col-md-4">
                         <label class=" mr-1 mt-3">Match Refree </label>
                         <input
                           class="form-control"
@@ -228,7 +227,7 @@ const Matchform = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6 col-md-4">
                       <label class=" mr-1 mt-3">Stadium Name </label>
                       <input
                         class="form-control"
@@ -241,7 +240,7 @@ const Matchform = () => {
                         required
                       />
                     </div>
-                    <div class="col-4">
+                    <div class="col-6 col-md-4">
                       <label class=" mr-1 mt-3">Date </label>
                       <input
                         class="form-control mt-3"
@@ -253,7 +252,7 @@ const Matchform = () => {
                         required
                       />
                     </div>
-                    <div class="col-4">
+                    <div class="col-6 col-md-4">
                       <label class=" mr-1 mt-3">Status </label>
                       <select
                         value={formData.status}
